@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:src="@mipmap/minebackground"
+                    android:id="@+id/imageView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginStart="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginStart="30px">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="飘柔精油无硅油洗发水"
+                        android:textSize="15sp"
+                        android:textColor="#282828"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30px"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24px"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.1分"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorFindtime" />
+
+                        <ImageView
+                            android:layout_marginLeft="30px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/star"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/star"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/star"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/star"
+                            />
+                        <ImageView
+                            android:layout_marginLeft="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/starcopy"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22px"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="去油：6"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorFindtime" />
+
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收毛囊：6"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorFindtime" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

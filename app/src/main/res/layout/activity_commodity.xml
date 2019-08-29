@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.find.CommodityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/commodity_back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:src="@mipmap/icon_beacklight" />
+<RelativeLayout
+    android:layout_gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_shoucang"
+        android:layout_toLeftOf="@+id/commidity_gengduo"
+        android:layout_toStartOf="@+id/commidity_gengduo" />
+    <ImageView
+        android:layout_marginLeft="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:src="@mipmap/icon_gengduo"
+        android:id="@+id/commidity_gengduo" />
+</RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_margin="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/commodity_imageview"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@mipmap/placeholder" />
+                <TextView
+                    android:id="@+id/image_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:layout_alignRight="@+id/commodity_imageview"
+                    android:layout_alignEnd="@+id/commodity_imageview"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/image_tv"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPhone X (A865) 64GB银色 黑色"
+                    android:lineSpacingExtra="20px"
+                    android:textColor="#282828"
+                    android:textSize="32px"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥8600~10360"
+                        android:textColor="#8F8F8F"
+                        android:textSize="30px" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#F5F5F5" />
+
+            <LinearLayout
+                android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_remendazhu"/>
+            <TextView
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品信息"
+                android:textSize="18sp"
+                android:textColor="#999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               <Button
+                   android:layout_marginLeft="30px"
+                   android:layout_width="130px"
+                   android:layout_height="50px"
+                   android:text="无线充电"
+                   android:background="@drawable/shape"
+                   android:textColor="@color/colorWhite"/>
+                <Button
+                    android:layout_marginLeft="40px"
+                    android:layout_width="90px"
+                    android:layout_height="50px"
+                    android:text="面容ID"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:layout_marginLeft="40px"
+                    android:layout_width="130px"
+                    android:layout_height="50px"
+                    android:text="后置双摄"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:layout_marginLeft="40px"
+                    android:layout_width="90px"
+                    android:layout_height="50px"
+                    android:text="全面屏"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/colorWhite"/>
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_ashrightsmall"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        <View
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="40px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="8.2分"
+                android:textColor="#282828"
+                android:textSize="36px" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_pingfenman" />
+
+    <ImageView
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_pingfenman" />
+            <ImageView
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pingfenman" />
+            <ImageView
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pingfenman" />
+            <ImageView
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pingfenkong" />
+            </LinearLayout>
+        </LinearLayout>
+
+                <com.example.ibb.ui.ui.find.MyRadar
+                    android:id="@+id/radar"
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb"/>
+        <LinearLayout
+            android:id="@+id/commidity_pf"
+            android:layout_margin="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@mipmap/icon_ashrightsmall"
+                android:gravity="center_horizontal"
+                android:text="共145人评分  "
+                android:textColor="#B1B1B1"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_zuixinwenti"/>
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相关问答"
+                android:textSize="32px"
+                android:textColor="#282828" />
+
+        </LinearLayout>
+
+        <com.example.ibb.custom_view.MyListView
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/commodity_listview"></com.example.ibb.custom_view.MyListView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<Button
+    android:id="@+id/tiwen_button"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="我要提问"
+    android:textSize="30px"
+    android:background="#1EB0C2"
+    android:textColor="@color/colorWhite"/>
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

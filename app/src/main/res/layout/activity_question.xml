@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.mine.QuestionActivity">
+    <FrameLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:padding="15dp"
+            android:id="@+id/question_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_beacklight" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray"/>
+
+    <android.support.design.widget.TabLayout
+        app:tabBackground="@color/colorWhite"
+        app:tabTextAppearance="@style/mine_aq_appearance"
+        app:tabIndicatorColor="#1EB0C2"
+        android:id="@+id/question_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question_viewPager"/>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibb.login_register.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/login_imageView"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_back_iv"
+            android:layout_marginTop="62px"
+            android:layout_marginLeft="15px"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@mipmap/back"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_marginTop="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="40px"
+            android:id="@+id/login_userpicture_iv"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="37px"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎回来"
+            android:textColor="@color/colorHui"
+            />
+        <TextView
+            android:id="@+id/login_username_tv"
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="160px"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <EditText
+                android:textColor="@color/colorWhite"
+                android:id="@+id/login_yzm_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:numeric="integer"
+                android:textColorHint="@color/colorHui" />
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="210px"
+                android:background="@color/colorHui" />
+
+
+            <Button
+                android:id="@+id/login_againyzm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:background="@null"
+                android:text="获取验证码"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:background="@color/colorHui" />
+
+        <Button
+            android:id="@+id/login_queren_button"
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="85px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/querenbox"
+            android:text="确认"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</FrameLayout>

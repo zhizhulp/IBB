@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/yuyue_pic"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/xifashui" />
+
+        <LinearLayout
+            android:layout_marginLeft="20px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wd_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飘柔净油无头屑无硅油洗发水"
+                android:textSize="36px"
+                android:maxLines="1"
+                android:textColor="#282828" />
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_marginTop="30px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_pingfenman"/>
+    <ImageView
+        android:layout_marginLeft="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_pingfenman"/>
+    <ImageView
+        android:layout_marginLeft="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_pingfenman"/>
+    <ImageView
+        android:layout_marginLeft="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_pingfenman"/>
+    <ImageView
+        android:layout_marginLeft="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_pingfenkong"/>
+    <TextView
+        android:layout_marginLeft="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.2分"
+        android:textColor="#282828"
+        android:textSize="36px"/>
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:maxLines="1"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="无硅油添加：8"
+                    android:textColor="#666666"
+                    android:textSize="24px"/>
+                <TextView
+                    android:maxLines="1"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="无硅油添加：8"
+                    android:textColor="#666666"
+                    android:textSize="24px"/>
+                <TextView
+                    android:maxLines="1"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="无硅油添加：8"
+                    android:textColor="#666666"
+                    android:textSize="24px"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/colorGray"/>
+        </LinearLayout>
+</LinearLayout>

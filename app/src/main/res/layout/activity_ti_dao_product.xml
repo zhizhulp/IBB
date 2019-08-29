@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.answered.TiDaoProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tiproduct_back_iv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@mipmap/icon_leftback"/>
+        <TextView
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提到的所有产品"
+            android:textSize="18sp"
+            android:textColor="#282828"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:drawableLeft="@mipmap/icon_prompt"
+                android:text="  人气最高"
+                android:textColor="#282828" />
+
+            <com.example.ibb.custom_view.MyListView
+                android:id="@+id/renqizuigao_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </com.example.ibb.custom_view.MyListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.ibb.custom_view.PileLayout
+                    android:id="@+id/pile_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    app:PileLayout_pileWidth="20px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="231人参加评论"
+                    android:textColor="#8F8F8F"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:background="@color/colorGray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:drawableLeft="@mipmap/icon_prompt"
+                android:text="  全部"
+                android:textColor="#282828" />
+
+            <com.example.ibb.custom_view.MyListView
+                android:id="@+id/quanbu_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+            </com.example.ibb.custom_view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"/>
+
+</LinearLayout>

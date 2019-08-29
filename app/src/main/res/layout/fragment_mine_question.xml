@@ -1,0 +1,14 @@
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/refresh_layout"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.mine.MineQuestionFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

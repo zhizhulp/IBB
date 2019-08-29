@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_wendawen" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="这是一个很长很长的title这是一个很长很长的title这是一个很长很长的title这是一个很长很长的title"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:srcCompat="@mipmap/icon_wendada" />
+
+    <TextView
+        android:textColor="#999999"
+        android:lineSpacingExtra="3dp"
+        android:id="@+id/tv_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:text="我家住在黄土高坡我家住在黄土高坡我家住在黄土高坡我家住在黄土高坡我家住在黄土高坡我家住在黄土高坡"
+        app:layout_constraintLeft_toRightOf="@id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginStart="5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="10dp"
+        android:text="0赞 . 0评"
+        android:textColor="#666666"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_content"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/title_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_count" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ibb.ui.ui.answered.OneFragment">
+
+    <!-- android:fitsSystemWindows="true"  不设置此属性，标题栏和系统状态栏会重叠-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <!-- app:tabGravity=”fill”
+            app:tabMode=”fixed”：在标签较少的时候，这两个属性同时使用，得到居中显示效果。-->
+        <android.support.design.widget.TabLayout
+            app:tabTextAppearance="@style/tagApprearance"
+            android:layout_centerVertical="true"
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="#1EB0C2"
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/search_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_sousuoyinying" />
+
+    </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
+</LinearLayout>

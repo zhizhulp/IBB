@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/item_linearLayout"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_Recommend_Recycler_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+             />
+
+        <TextView
+            android:id="@+id/text_Recommend_Recycler_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#282828"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:visibility="gone"
+                android:stepSize="0.5"
+                android:rating="3"
+                android:id="@+id/rating_bar"
+                style="@style/roomRatingBar"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.5dp"
+                android:maxLines="1"
+                android:text="0.00分"
+                android:textColor="#333333"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

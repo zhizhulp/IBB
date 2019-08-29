@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.login_register.BindPhoneActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="30px"
+                android:id="@+id/bind_back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_beacklight" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="绑定手机号"
+                android:textSize="36px"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30px"
+                android:text="跳过" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="60px"
+            android:src="@mipmap/logo_ibb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:layout_marginTop="100px"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:numeric="integer"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorHui"/>
+        <View
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="15px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorHui"
+            android:layout_marginRight="15px"/>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40px"
+                android:hint="请输入验证码"
+                android:background="@null"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/register_shoujihao_et"
+                android:textColorHint="@color/colorHui"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_marginRight="22px"
+                android:background="@color/colorGray"/>
+            <Button
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:text="获取验证码"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="15px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorHui"
+            android:layout_marginRight="15px"/>
+
+        <Button
+            android:layout_marginTop="150px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/button_lijibangd"/>
+
+    </LinearLayout>
+
+</LinearLayout>

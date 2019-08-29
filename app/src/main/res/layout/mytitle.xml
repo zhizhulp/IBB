@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ibb.ui.ui.answered.details.CustomToolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:background="@color/colorWhite"
+    >
+    <TextView
+        android:id="@+id/lt_main_title_left"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="30px"
+        android:drawableLeft="@mipmap/icon_back_left"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/lt_main_title"
+        android:layout_width="298px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:text="提到的所有产品"
+        android:background="@drawable/details_button"
+       android:textColor="@color/colorPurple"
+       android:gravity="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/lt_main_title_right"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_gravity="right"
+        android:layout_marginRight="30px"
+        android:drawableRight="@mipmap/icon_beackfenxiang"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:visibility="visible" />
+
+</com.example.ibb.ui.ui.answered.details.CustomToolbar>

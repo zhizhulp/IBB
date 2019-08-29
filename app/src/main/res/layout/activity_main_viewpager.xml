@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.lianxi.MainActivity_viewpager">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="15dp"
+            android:id="@+id/peoplecenter_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_beacklight"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_launcher_round"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/mine_header"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/icon_title"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/mine_header"
+            android:layout_toRightOf="@+id/mine_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="胖胖爱肉你说"
+                    android:textColor="#282828"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="iphoneX超喜欢摄像头"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="56dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/icon_addtofubensan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:text="关注"
+                    android:textColor="#1EB0C2"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="324"
+                android:textColor="#282828"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="关注"
+                android:textColor="#282828"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="542"
+                android:textColor="#282828"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="粉丝"
+                android:textColor="#282828"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="987"
+                android:textColor="#282828"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="获赞"
+                android:textColor="#282828"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_marginTop="30px"
+        android:background="#F2F2F2"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<TextView-->
+    <!--android:textColor="#999999"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="全部" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="20px"-->
+    <!--android:layout_width="40px"-->
+    <!--android:layout_height="40px"-->
+    <!--android:src="@mipmap/icon_selected" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TA回答的"-->
+    <!--android:textColor="#EAEAEA"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TA点赞的"-->
+    <!--android:textColor="#EAEAEA"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TA提问的"-->
+    <!--android:textColor="#EAEAEA"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_tab"
+            ></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/my_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            ></android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+</LinearLayout>

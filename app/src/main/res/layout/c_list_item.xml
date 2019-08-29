@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TA评论了"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45分钟前"
+                android:layout_marginLeft="15dp"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/c_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你有哪些口红想看和女神比较的口红来吧？"
+            android:textStyle="bold"
+            android:textColor="#282828"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_margin="15dp"
+            android:id="@+id/my_textaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TA:CHANEL女神的必需品想要美丽的小仙女们来对于我们的跟女神最爱你给你"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="531赞"
+                android:textColor="#666666"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textColor="#666666"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123评"
+                android:textColor="#666666"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="@drawable/button_shape"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@+id/biaoqian"
+                    android:text="美妆"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="10dp"
+                    />
+                <Button
+                    android:id="@+id/biaoqian"
+                    android:background="@drawable/button_shape"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="口红"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorGray"/>
+    </LinearLayout>
+</LinearLayout>

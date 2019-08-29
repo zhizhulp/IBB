@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mineLv_title"
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="头发老爱出油有什么好的解决方法或洗发水推荐吗？"
+        android:textColor="#282828"
+        android:textSize="32px"/>
+    <TextView
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我也是双十一被爱哔哔种草的飘柔精油洗发水、说是很好用，再也不用担心头发老痒什么什么我也是双十一被爱哔哔种草的飘柔精油洗发水、说是很好用，再也不用担心头发老痒什么什么"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#A5A5A5"
+        android:textSize="28px"/>
+    <LinearLayout
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ping_tv"
+            android:layout_toStartOf="@+id/ping_tv"
+            android:text="632赞"
+            android:textColor="#666666"
+            android:textSize="20px"
+            android:id="@+id/zan_tv" />
+
+        <TextView
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#666666"
+            android:textSize="20px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ping_tv"
+            android:layout_toStartOf="@+id/ping_tv"
+            />
+
+        <TextView
+            android:layout_marginLeft="10px"
+            android:id="@+id/ping_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="987评"
+            android:textColor="#666666"
+            android:textSize="20px"/>
+        <TextView
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#666666"
+            android:textSize="20px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ping_tv"
+            android:layout_toStartOf="@+id/ping_tv"
+            />
+
+        <TextView
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="3天前"
+            android:textColor="#666666"
+            android:textSize="20px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"/>
+</LinearLayout>

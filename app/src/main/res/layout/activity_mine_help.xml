@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.mine.MineHelpActivity">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:padding="15dp"
+            android:id="@+id/help_back_iv"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_beacklight"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助与反馈"
+            android:textColor="#323232"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热点问题"
+        android:textSize="26px"
+        android:textColor="#999999"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:id="@+id/help_user_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="爱哔哔是什么？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/lssuequestion_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="如何发布问题？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/viewfollow_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="哪里查看我关注的问题/收藏的回答/收藏的商品？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/topanswer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="热门答主在哪里查看？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/upgrade_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="为什么升级/重装后我的收藏不见了？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/found_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="如果发现违规内容怎么办？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/mine_follow"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorGray" />
+    <RelativeLayout
+        android:id="@+id/contact_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toEndOf="@+id/mine_attention"
+            android:layout_toRightOf="@+id/mine_attention"
+            android:text="如何联系我们？"
+            android:textColor="#282828" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/icon_return" />
+    </RelativeLayout>
+</LinearLayout>
+   <TextView
+       android:visibility="gone"
+       android:layout_marginTop="50px"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="没有解决我的问题？"
+       android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/help_fback_button"
+        android:layout_marginTop="60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="690px"
+        android:layout_height="88px"
+        android:background="@drawable/settingbutton_shape"
+        android:text="我要反馈"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>

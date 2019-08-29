@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.example.ibb.ui.ui.add.ChooseShoppingActivity">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/chooseshopping_qx_tv"
+            android:layout_marginLeft="30px"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_margin="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择商品"
+            android:textSize="18sp"
+            android:textColor="#282828"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/choose_addbq_tv"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加标签/商品"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="#1EB0C2"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+            android:layout_width="580px"
+            android:layout_height="60px"
+            android:hint="  iPhoneX"
+            android:background="@drawable/choose_shape"/>
+        <TextView
+            android:id="@+id/chooseshopping_search_tv"
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="#1EB0C2"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"/>
+</LinearLayout>

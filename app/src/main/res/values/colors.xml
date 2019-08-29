@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ADADAD</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#F7D169</color>
+    <color name="colorGray">#DADADA</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorHui">#7E7E7E</color>
+    <color name="colorMine">#ADADAD</color>
+    <color name="colorBlue">#2517CA</color>
+    <color name="colorPurple">#A636B9</color>
+    <color name="colorZi">#9A64CA</color>
+    <color name="colorBeijing">#303F9F</color>
+    <color name="colorfindtext">#B1B1B1</color>
+    <color name="colorFindnr">#8F8F8F</color>
+    <color name="colorFindtime">#7E7E7E</color>
+    <color name="colorAnsweredtitle">#282828</color>
+    <color name="colorAnswerednr">#949494</color>
+    <color name="colorLan">#1EB0C2</color>
+    <color name="background">#f5f5f5</color>
+    <color name="title_line">#E6E6E6</color>
+</resources>

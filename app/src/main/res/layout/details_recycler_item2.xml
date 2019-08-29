@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/find_tx"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:padding="30px"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="36px"
+                android:text="来自杭州的sam老师"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/details_button"
+                android:text="飘柔乌龟油头发头发头发头发" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/icon_star_full" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:src="@mipmap/icon_star_full" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="8.1分" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_nr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="16px"
+            android:text="现在吃鸡，联想拯救者到底屌不屌？现在吃鸡，联想拯救者到底屌不屌？现在吃鸡，联想拯救者到底屌不屌？现在吃鸡，联想拯救者到底屌不屌？"
+            android:textColor="#8F8F8F"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/zan_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="25px"
+                android:layout_toLeftOf="@+id/ping_tv"
+                android:layout_toStartOf="@+id/ping_tv"
+                android:text="534赞"
+                android:textColor="@color/colorFindtime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/ping_tv"
+                android:layout_toStartOf="@+id/ping_tv"
+                android:text="."
+                android:textColor="@color/colorFindtime" />
+
+            <TextView
+                android:id="@+id/ping_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30px"
+                android:text="234评"
+                android:textColor="@color/colorFindtime" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="26px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"/>
+</LinearLayout>

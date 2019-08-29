@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:background="@color/colorWhite"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.ibb.custom_view.CircleImageView
+        android:id="@+id/im_head"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/b3" />
+
+    <TextView
+        android:lineSpacingExtra="3dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:id="@+id/tv_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="我家住在黄土高坡"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/im_head"
+        app:layout_constraintTop_toTopOf="@+id/im_head" />
+
+    <TextView
+        android:textColor="#7e7e7e"
+        android:textSize="10sp"
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="3分钟前"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/im_head"
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

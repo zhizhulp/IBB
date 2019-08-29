@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibb.ui.ui.mine.AnsweredFragment">
+
+   <!-- nestedScrollingEnabled设置不能滑动-->
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:nestedScrollingEnabled="false"
+       android:id="@+id/mine_recycler">
+
+   </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

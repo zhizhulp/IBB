@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/b3"
+            android:id="@+id/find_tx"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/find_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来自杭州的sadoxi"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/find_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="现在吃鸡，联想拯救者到底屌不屌？"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_shape"
+                    android:text="数据线"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_marginLeft="0.5dp"
+                    android:id="@+id/find_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="3分钟前"
+                    android:textColor="@color/colorFindtime"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_go_answer"
+                    android:background="@drawable/find_tag_bg"
+                    android:text="我来回答"
+                    android:textColor="@color/colorLan"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorGray" />
+
+</LinearLayout>

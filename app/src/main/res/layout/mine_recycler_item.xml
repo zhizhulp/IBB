@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这里是问题只占一行"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="40px"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:text="这是在回答问题那，最多能有俩行大概。。。"
+            android:textColor="@color/colorMine" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="30px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01-20"
+                android:textColor="@color/colorMine"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:30"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/colorMine"/>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/like"
+                android:layout_marginLeft="60px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="352"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/colorMine"/>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/comment"
+                android:layout_marginLeft="25px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="46"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/colorMine"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView2"
+            android:layout_width="350px"
+            android:layout_height="200px"
+            android:src="@mipmap/minebackground"
+             />
+
+    </RelativeLayout>
+<View
+    android:layout_marginLeft="30px"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/colorMine"
+    />
+</LinearLayout>

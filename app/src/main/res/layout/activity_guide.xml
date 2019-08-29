@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibb.splash.GuideActivity">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/llPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40px"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/guide_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击进入"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+             />
+
+</RelativeLayout>

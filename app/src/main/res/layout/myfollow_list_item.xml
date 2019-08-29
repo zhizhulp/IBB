@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_head"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会飞的鱼"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="头发老爱出油、有什么好的解决方法或洗发水推荐吗？"
+        android:textColor="#282828"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我也是双十一被爱哔哔种草的飘柔精油洗发水、说是很好用，再也不用担心头发老痒什么什么我也是双十一被爱哔哔种草的飘柔精油洗发水、说是很好用，再也不用担心头发老痒什么什么"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ping_tv"
+            android:layout_toStartOf="@+id/ping_tv"
+            android:text="0赞"
+            android:textColor="#666666"
+            android:textSize="10dp"
+            android:id="@+id/tv_like_count" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#666666"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0评"
+            android:textColor="#666666"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#666666"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="3天前"
+            android:textColor="#666666"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>

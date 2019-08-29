@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.example.ibb.ui.ui.find.FindFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="发现"
+        android:textColor="@color/main_title"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@mipmap/icon_zuixinwenti"
+                    android:text="  最新问题"
+                    android:textColor="#282828"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/find_more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@mipmap/icon_ashrightsmall"
+                    android:text="查看更多  "
+                    android:textColor="@color/colorfindtext" />
+            </RelativeLayout>
+
+            <com.example.ibb.custom_view.MyListView
+                android:id="@+id/find_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@mipmap/icon_remendazhu"
+                    android:text="  热门答主"
+                    android:textColor="#282828"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/find_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@mipmap/icon_ashrightsmall"
+                    android:text="查看更多  "
+                    android:textColor="@color/colorfindtext" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/find_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@mipmap/icon_zuixinshangpin"
+                    android:text="  高分商品"
+                    android:textColor="#282828"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <com.example.ibb.custom_view.MyListView
+                android:id="@+id/find_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

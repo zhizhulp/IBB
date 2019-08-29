@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.ibb.custom_view.CircleImageView
+                android:id="@+id/message_header"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="30px"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:src="@mipmap/b3"/>
+            <LinearLayout
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/message_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="来自杭州的sadoxi 回答了我的问题 USB数据线以及充电器线... 下我的回答：比较知名的有哪些品牌请大神推荐？"
+                        android:textColor="#666666"
+                        android:textSize="28px"/>
+
+
+                <TextView
+                    android:layout_marginTop="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3分钟前"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray"/>
+    </LinearLayout>
+</LinearLayout>

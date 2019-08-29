@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibb.ui.ui.mine.PeopleConcernActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="55px"
+                android:src="@mipmap/mineback"
+                android:id="@+id/people_concern__back" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55px"
+                android:layout_marginRight="30px"
+                android:id="@+id/people_concern_messaage"
+                />
+
+            <ImageView
+                android:layout_marginTop="100px"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/people_concern_userpicture_iv"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@mipmap/concern"
+                android:id="@+id/people_addto"
+                android:layout_above="@+id/people_concern_user_name_tv"
+                android:layout_toRightOf="@+id/people_concern_user_name_tv"
+                android:layout_toEndOf="@+id/people_concern_user_name_tv" />
+            <TextView
+                android:layout_marginTop="15px"
+                android:id="@+id/people_concern_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户昵称"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@+id/people_concern_userpicture_iv"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="45px"
+                android:orientation="horizontal"
+                android:layout_below="@+id/people_concern_user_name_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="知名美学博主"
+                    android:textColor="@color/colorMine"
+                    android:background="@drawable/button_shape"/>
+                <Button
+                    android:layout_marginLeft="15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时尚博主"
+                    android:textColor="@color/colorMine"
+                    android:background="@drawable/button_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="34px">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="659"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="被关注"
+                        android:textColor="@color/colorMine"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="659"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已关注"
+                        android:textColor="@color/colorMine"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="324"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="获赞数"
+                        android:textColor="@color/colorMine"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/radio"
+            android:gravity="center_vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/people_concern_answered_radiobt"
+                android:layout_width="0px"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已回答"
+                android:textSize="16sp"
+                android:textColor="@drawable/radio_button"
+                android:background="@drawable/radio_selector"
+
+
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:background="@color/colorMine"
+                />
+            <RadioButton
+                android:layout_width="0px"
+                android:layout_height="100px"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="已提问"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:id="@+id/people_concern_questions_radiobt"
+                android:textColor="@drawable/radio_button"
+                android:background="@drawable/radio_selector"
+
+                />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/people_fm"
+            >
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

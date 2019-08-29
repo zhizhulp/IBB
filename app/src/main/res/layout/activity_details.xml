@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context="com.example.ibb.ui.ui.answered.details.DetailsActivity">
+
+    <!--<include-->
+        <!--android:id="@+id/Toptoolbar"-->
+        <!--layout="@layout/mytitle" />-->
+    <!--<include-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/Downtoolbar"-->
+        <!--layout="@layout/mytitle" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_beacklight"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:id="@+id/details_back_iv" />
+        <!--<TextView-->
+            <!--android:layout_margin="30px"-->
+            <!--android:id="@+id/lt_main_title"-->
+            <!--android:layout_width="298px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="提到的所有产品"-->
+            <!--android:background="@drawable/details_button"-->
+            <!--android:textColor="@color/colorPurple"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"/>-->
+        <!--/>-->
+
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_beackfenxiang"
+            android:layout_alignParentRight="true"
+            />
+
+        <!--<TextView-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_margin="30px"-->
+            <!--android:id="@+id/lt_main_title_yc"-->
+            <!--android:layout_width="298px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="yiyiyi"-->
+            <!--android:background="@drawable/details_button"-->
+            <!--android:textColor="@color/colorPurple"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"/>-->
+        <!--/>-->
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"/>
+
+    <com.example.ibb.ui.ui.answered.details.GoTopScrollview
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_margin="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:maxLines="2"
+                        android:text="烫头发老爱出油，有什么好的解决方法？请问飘柔精油无归怎么样？"
+                        android:id="@+id/textView4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:text="头发老爱出油，每天都要洗头怎么办很纠结、早起不想洗太早晚上不想动很纠结、想问问你不想起、不想洗、很纠结头发很油我该怎么办在线等急？"/>
+
+                <LinearLayout
+                    android:layout_margin="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="80px"
+                        android:layout_height="40px"
+                        android:text="收毛囊"
+                        android:textSize="20px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/button_shape"/>
+                    <Button
+                        android:layout_marginLeft="20px"
+                        android:layout_width="80px"
+                        android:layout_height="40px"
+                        android:text="去油"
+                        android:textSize="20px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/button_shape"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16142点赞" />
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="993评论"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px" />
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3654关注"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/button_jiaguanzhu"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:background="#F5F5F5"
+                    android:layout_width="match_parent"
+                    android:layout_height="68px"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_marginLeft="30px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0个回答" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="按质量排序 "
+                        android:drawableRight="@mipmap/icon_topbeack" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details_recyclerView">
+
+                </android.support.v7.widget.RecyclerView>
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/answerd_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="我来回答"
+                        android:textColor="@color/colorWhite"
+                        android:background="#1EB0C2"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </com.example.ibb.ui.ui.answered.details.GoTopScrollview>
+
+</LinearLayout>

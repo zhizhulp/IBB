@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"
+        android:id="@+id/tv_tag"
+        android:gravity="center"
+        android:background="@drawable/tag_bg"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@mipmap/icon_shu"
+        android:textSize="13sp"
+        android:textColor="@color/colorLan"
+        android:text="飘柔精油无硅油洗发水"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/roomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.5" />
+    <TextView
+        android:textSize="11sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/tv_score"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="0分"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

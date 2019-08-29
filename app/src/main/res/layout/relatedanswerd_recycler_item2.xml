@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginLeft="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="20px"
+                android:layout_alignParentRight="true"
+                android:layout_width="350px"
+                android:layout_height="200px"
+                android:src="@mipmap/minebackground"/>
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:text="1111111111111111111111"
+                    android:textColor="@color/colorAnsweredtitle"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_marginTop="30px"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:text="22222222222"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorAnswerednr"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="20px">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:text="YSL#42"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_shape"
+                />
+
+            <RelativeLayout
+                android:layout_marginRight="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25px"
+                    android:layout_toLeftOf="@+id/ping_tv"
+                    android:layout_toStartOf="@+id/ping_tv"
+                    android:text="534赞"
+                    android:textColor="@color/colorFindtime"
+                    android:id="@+id/zan_tv" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="@color/colorFindtime"
+                    android:layout_toLeftOf="@+id/ping_tv"
+                    android:layout_toStartOf="@+id/ping_tv"
+                    android:layout_marginRight="10px"
+                    />
+
+                <TextView
+                    android:id="@+id/ping_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="234评"
+                    android:textColor="@color/colorFindtime" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray"/>
+
+    </LinearLayout>
+</LinearLayout>

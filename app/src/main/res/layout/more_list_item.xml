@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.example.ibb.custom_view.ImageViewPlus
+                android:layout_margin="30px"
+                android:layout_centerVertical="true"
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:id="@+id/more_tx_iv"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/more_tx_iv"
+                android:layout_toEndOf="@+id/more_tx_iv">
+                <TextView
+                    android:id="@+id/more_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MIshens"
+                    android:textColor="#313131"
+                    android:textSize="28px"/>
+                <TextView
+                    android:id="@+id/more_signature_tv"
+                    android:layout_marginTop="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最爱的口红不过美妆我的最爱"
+                    android:textColor="#999999"
+                    android:textSize="24px"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/more_iv"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/button_guanzhu"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/colorGray"/>
+    </LinearLayout>
+</LinearLayout>

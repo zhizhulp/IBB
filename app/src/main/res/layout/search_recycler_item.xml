@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wendawen"/>
+            <TextView
+                android:id="@+id/text"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 魅蓝S6和坚果Pro2哪个好？应该选择那个手机苦恼？"
+                android:maxLines="3"
+                android:maxLength="36"
+                android:ellipsize="end"
+                android:textColor="#282828"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wendada"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22222222222"
+                android:textSize="15sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/colorAnswerednr"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ping_tv"
+                    android:layout_toStartOf="@+id/ping_tv"
+                    android:text="534赞"
+                    android:textColor="#666666"
+                    android:textSize="20px"
+                    android:id="@+id/zan_tv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:layout_marginLeft="10px"
+                    android:textColor="#666666"
+                    android:textSize="20px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ping_tv"
+                    android:layout_toStartOf="@+id/ping_tv"
+                    />
+
+                <TextView
+                    android:id="@+id/ping_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="234评"
+                    android:layout_marginLeft="10px"
+                    android:textColor="#666666"
+                    android:textSize="20px" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:id="@+id/button"
+                    android:layout_width="100px"
+                    android:layout_height="50px"
+                    android:text="口红"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_shape"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray"/>
+    </LinearLayout>
+</LinearLayout>
